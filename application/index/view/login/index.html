@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial=scale=1.0">
+    <title>登入系统</title>
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  
+  <body calss="gray-bg">
+    <div class="container">
+      <div calss="row">
+        <div class="col-sm-7">
+          <div class="ibox float-e-margins">
+            <div class="ibox-content">
+              <div class="row">
+                <div calss="col-sm-6 b-r">
+                  <h3 class="m-t-none m-b">登入</h3>
+                  <p>歡迎登入本站</p>
+                  <form role="form" action="{:url('login/dologin')}" method="post">
+                    <div calss="form-group">
+                      <label>用戶名</label>
+                      <input type="text" placeholder="請輸入用戶名" class="form-control" name="user_name">
+                    </div>
+                 	<div calss="form-group">
+                      <label>密碼</label>
+                      <input type="password" placeholder="請輸入密碼" class="form-control" name="user_pwd">
+                    </div>                   
+                    <div>
+                      <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit">登入</button>
+                    </div>
+                  </form>
+                  <div>
+                    <a class="btn btn-sm btn-primary pull-right m-t-n-xs" href="/index/register/">註冊</a>                                 
+                  </div>
+                </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/static/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
